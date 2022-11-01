@@ -1,0 +1,56 @@
+.login_section {
+  background-color: rgb(255, 0, 157);
+  display: flex;
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+  color: rgba(4, 4, 83, 0.836);
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5%;
+}
+.login_section h2 {
+  color: black;
+}
+.login_section:hover,
+.login_section:active {
+  transform: translate(10px) scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.login_button {
+  align-self: center;
+  color: cornsilk;
+  background-color: rgb(0, 0, 141);
+  height: 1.9rem;
+  width: 6rem;
+  font-size: large;
+  font-weight: 400;
+  outline: none;
+  appearance: none;
+  border-radius: 8px;
+  border: none;
+}
+.login_button::first-letter {
+  color: aliceblue;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.login_textbox,
+.login_password
+{
+border-radius:20px;
+height: 2rem;
+padding: 20px;
+border: none;
+}

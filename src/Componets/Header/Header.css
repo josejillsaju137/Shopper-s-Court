@@ -1,0 +1,20 @@
+.header {
+    background-color: rgb(31, 42, 107);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttond{
+    align-self:flex-start ;
+    place-self: initial;
+    right: 1px;
+}

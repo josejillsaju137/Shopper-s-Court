@@ -1,0 +1,19 @@
+.cartitem {
+padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+ background-color: rgba(18, 18, 196, 0.808);
+ margin: 5px;
+ border-radius: 10px;
+}
+
+.cartitem_title {
+    padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+     background-color: rgba(4, 4, 119, 0.808);
+     margin: 5px;
+     border-radius: 10px;
+    }
