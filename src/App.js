@@ -4,7 +4,8 @@ import "./App.css";
 import Login from "./Componets/Auth/Login";
 import Notification from "./Componets/Header/Notification";
 import Home from "./Componets/Home/Home";
-import { sendCartData } from "./Store/cartSlice";
+import { sendCartData } from "./Store/cartActionSlice";
+
 import { notificationSlice } from "./Store/NotificationSlice";
 let firstLoading = true;
 
@@ -21,40 +22,6 @@ function App() {
       return;
     }
     dispatch(sendCartData(cart));
-    // const sendRequest = async () => {
-    //   // dispatch(
-    //   //   notificationSlice.showNotification({
-    //   //     open: true,
-    //   //     message: "Sending Request",
-    //   //     type: "warning",
-    //   //   })
-    //   // );
-
-    //   const res = await fetch(
-    //     "https://shopper-s-court-default-rtdb.firebaseio.com/cartitems.json",
-    //     {
-    //       method: "put",
-    //       body: JSON.stringify(cart),
-    //     }
-    //   );
-    //   // const data = await res.json();
-    //   dispatch(
-    //     notificationSlice.showNotification({
-    //       open: true,
-    //       message: "Sending Request to datata base",
-    //       type: "success",
-    //     })
-    //   );
-    // };
-    // sendRequest().catch((err) => {
-    //   // dispatch(
-    //   //   notificationSlice.showNotification({
-    //   //     open: true,
-    //   //     message: "Sending Request failed",
-    //   //     type: "error",
-    //   //   })
-    //   // );
-    // });
   }, [cart, dispatch]);
 
   return (
